@@ -1,0 +1,22 @@
+name: Check puzzles 9–11
+on:
+  push:
+    paths:
+      - 'Triton-Puzzles.ipynb'
+      - 'test_puzzles_9_11.py'
+      - '.github/workflows/puzzles.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  interpreter:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install torch --index-url https://download.pytorch.org/whl/cpu
+      - run: python -m pip install triton==3.4.0 numpy jaxtyping
+      - run: python test_puzzles_9_11.py
