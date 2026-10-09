@@ -12,7 +12,7 @@ On Linux with Python 3.11:
 
 ```sh
 python -m pip install torch --index-url https://download.pytorch.org/whl/cpu
-python -m pip install triton==3.4.0 numpy jaxtyping
+python -m pip install triton==3.4.0 numpy==1.26.4 jaxtyping
 python test_puzzles_9_11.py
 ```
 
