@@ -1,8 +1,10 @@
 # Triton Puzzles
 
+This fork implements **puzzles 9, 10, and 11** in the notebook. See [solution notes and test instructions](SOLUTIONS.md).
+
 w/ [Tejas Ramesh](https://tejas3070.github.io/) and [Keren Zhou](https://www.jokeren.tech/) based on [Triton-Viz](https://github.com/Deep-Learning-Profiling-Tools/triton-viz)
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/srush/Triton-Puzzles/blob/main/Triton-Puzzles.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cjy13579/Triton-Puzzles/blob/main/Triton-Puzzles.ipynb)
 
 
 Programming for accelerators such as GPUs is critical for modern AI systems.
